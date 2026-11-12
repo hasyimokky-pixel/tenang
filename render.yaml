@@ -1,0 +1,20 @@
+# Blueprint Render — bisa langsung dipakai lewat "New > Blueprint"
+services:
+  - type: web
+    name: tenang
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: "echo no-build-needed"
+    startCommand: "node server.js"
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 20.11.1
+      # isi salah satu kalau mau mode AI realtime (boleh dikosongkan)
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: VAPID_SUBJECT
+        value: mailto:kamu@email.com

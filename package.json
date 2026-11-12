@@ -1,0 +1,16 @@
+{
+  "name": "tenang",
+  "version": "1.3.0",
+  "private": true,
+  "description": "PWA quote islami penenang hati — kurasi offline + AI realtime + notifikasi pagi (web push)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["pwa", "quotes", "islami", "web-push", "offline-first"],
+  "license": "MIT"
+}
